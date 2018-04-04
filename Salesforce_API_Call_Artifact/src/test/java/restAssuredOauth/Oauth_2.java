@@ -14,18 +14,18 @@ import org.apache.http.message.BasicHeader;
 
 public class Oauth_2 {
 	
-	static final String USERNAME = "";
-	static final String PASSWORD = "";
+	static final String USERNAME = ""; //add your salesforce username here
+	static final String PASSWORD = ""; //add your salesforce password here
 	static final String LOGINURL = "https://na73.salesforce.com";
 	static final String GRANTSERVICE = "/services/oauth2/token?grant_type=password";
-	static final String CLIENTID = "";
-	static final String CLIENTSECRET = "";
+	static final String CLIENTID = ""; //salesforce client id
+	static final String CLIENTSECRET = ""; //salesforce client secret
     private static String REST_ENDPOINT = "/services/data" ;
     private static String API_VERSION = "/v41.0" ;
     private static String baseUri;
     private static Header oauthHeader;
     private static Header prettyPrintHeader = new BasicHeader("X-PrettyPrint", "1");
-    private static String leadId ;
+    private static String leadId;
     private static String leadFirstName;
     private static String leadLastName;
     private static String leadCompany;
